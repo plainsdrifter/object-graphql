@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+  api:
+    build: ./
+    restart: always
+    environment:
+      PORT: '9999'
+    ports:
+      - '4000:9999'
+    expose:
+      - '9999'
